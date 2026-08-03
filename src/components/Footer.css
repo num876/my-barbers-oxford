@@ -1,0 +1,89 @@
+.footer {
+  background-color: #08090a;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-map-container {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 5rem;
+}
+
+.footer-map {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  /* Premium Dark Mode Filter for Google Maps */
+  filter: grayscale(100%) invert(92%) contrast(83%);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-logo {
+  height: 100px;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.footer-title {
+  color: var(--accent-gold);
+  margin-bottom: 1.5rem;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+}
+
+.footer-text {
+  color: var(--text-muted);
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 0.8rem;
+  color: var(--text-muted);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding-bottom: 0.5rem;
+}
+
+.footer-list li:last-child {
+  border-bottom: none;
+}
+
+.footer-list li span {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.footer-list a {
+  color: var(--accent-gold);
+}
+
+.footer-list a:hover {
+  color: var(--text-main);
+}
+
+.walk-in-notice {
+  color: var(--accent-gold) !important;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}

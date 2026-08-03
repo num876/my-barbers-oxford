@@ -1,0 +1,76 @@
+.premium-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.logo-svg {
+  animation: slowSpin 20s linear infinite;
+  transition: transform 0.5s ease;
+}
+
+.premium-logo:hover .logo-svg {
+  transform: scale(1.1);
+  animation-play-state: paused;
+}
+
+.logo-circle-text {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  fill: var(--accent-gold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.logo-monogram {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  font-weight: 800;
+  fill: var(--text-main);
+  /* Un-spin the monogram so it stays upright while the text spins */
+  transform-origin: 50px 50px;
+  animation: counterSpin 20s linear infinite;
+}
+
+.premium-logo:hover .logo-monogram {
+  animation-play-state: paused;
+  fill: var(--accent-gold);
+  transition: fill 0.3s ease;
+}
+
+.logo-text-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-title-side {
+  font-family: var(--font-sans);
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: var(--text-main);
+  line-height: 1;
+}
+
+.logo-subtitle-side {
+  font-family: var(--font-serif);
+  font-size: 0.8rem;
+  letter-spacing: 5px;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+@keyframes slowSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes counterSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
