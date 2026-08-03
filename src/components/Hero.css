@@ -198,10 +198,39 @@
   .hero-text-wrapper::before {
     display: none;
   }
-  .hero-title {
-    font-size: 4rem;
+  
+  .hero-content {
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
   }
+  
+  .hero-subtitle {
+    margin-bottom: 1rem;
+  }
+  
+  .hero-title {
+    font-size: clamp(3rem, 12vw, 4rem);
+    line-height: 1.1;
+  }
+  
+  .hero-description {
+    font-size: 1.1rem;
+    margin: 0 auto 2.5rem;
+    padding: 0 1rem;
+  }
+  
   .hero-actions {
     flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    gap: 1rem;
+  }
+  
+  .hero-actions a {
+    width: 100%;
+    text-align: center;
+    display: block;
   }
 }
