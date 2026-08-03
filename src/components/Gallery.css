@@ -97,8 +97,29 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+  .gallery {
+    padding: 4rem 0;
+  }
+  
+  .gallery-header {
+    margin-bottom: 2.5rem;
+  }
+  
   .gallery-masonry {
-    column-count: 1;
+    /* Pinterest style: 2 columns looks much better on mobile than 1 giant column */
+    column-count: 2;
+    column-gap: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .gallery-item {
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+  
+  /* Mobile lacks hover, so show the vibrant colors by default! */
+  .gallery-item img {
+    filter: grayscale(0%) contrast(1.05);
   }
 }
