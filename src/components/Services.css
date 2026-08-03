@@ -143,6 +143,15 @@
   }
 }
 
+@media (max-width: 768px) {
+  .services-header {
+    margin-bottom: 2.5rem;
+  }
+  .services-menu-wrapper {
+    padding: 1.5rem 1rem;
+  }
+}
+
 @media (max-width: 480px) {
   .service-name {
     font-size: 1.1rem;

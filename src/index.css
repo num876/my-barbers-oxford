@@ -59,7 +59,7 @@ img {
 
 .section-title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 8vw, 2.5rem);
   margin-bottom: 3rem;
   color: var(--accent-gold);
   position: relative;
@@ -130,4 +130,10 @@ img {
 
 .fade-in {
   animation: fadeIn 0.8s ease forwards;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 0;
+  }
 }
